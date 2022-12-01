@@ -1,2 +1,5 @@
 # to-do-list
-to do list feito com react e integrado com banco de dados
+
+## Apĺicação de gerenciamento de atividades via interface grafica
+
+A aplicação deverar administrar usuarios, atividades e gerar relatorios

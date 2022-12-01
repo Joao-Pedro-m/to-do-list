@@ -3,4 +3,5 @@ div {
 	width: 100vh;
 	display: flex;
 	justify-content: center;
+	margin-top: 16rem;
 }
