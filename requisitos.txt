@@ -1,12 +1,36 @@
 
+ o sistema deverar oferecer a função de menu inicial:
+	caso usuario não esteja logado:
+		deverar oferecer uma opção de redirecionamento para a atividade "cadastro":
+			### fim da atividade ###
+		deverar oferecer uma opção de redirecionamento para a atividade "login":
+			### fim da atividade ###
+	caso usuario esteja logado:
+		deverar oferecer uma opção para acessar o sistema:
+			### fim da atividade ###
+		deverar oferecer uma opção para consultar conta:
+			### fim da atividade ### 
+	deverar oferecer uma opção de redirecionamento para a rotina "sobre":
+		### retornar a atividade "menu inicial"
+
+ o sistema deverar oferecer a funcão de cadastro:
+	deverar receber os dados e caso siga os seguintes requisitos deverar criar a conta:
+		& o nome de usuario deverar se valido e não existir no banco de dados
+		& o email deverar ser valido, existir e não pertencer a alguem no banco de dados
+		& a senha deverar ser valida sem espaços, com 8 ou mais caracteres, conter caracteres especiais, numeros e 
+
+
+
  o sistema deverar oferecer a função de login:
 	deverar logar com nome de usuario e senha:
-		deverar ser feita uma consulta no banco de dados buscando pelo nome de usuario, caso dados corretos:
+		deverar ser feita uma consulta no banco de dados buscando pelo nome de usuario, caso dados estejam corretos:
 			logar no sistema
 			### fim da atividade ### 
+		deverar ser imformado um erro caso os dados estejam incorretos ou não constem no banco de dados:
+			### retorna a atividade login
 	deverar oferecer uma opção de redirecionamento para a rotina "recuperar senha":
-		retorna a atividade login
-	deverar oferecer uma opção de redirecionamento para a atividade "cadastrar senha":
+		### retorna a atividade "login"
+	deverar oferecer uma opção de redirecionamento para a atividade "cadastro":
 		### fim da atividade ###
 	deverar oferecer uma opção de redirecionamento para a atividade "menu inicial":
 		### fim da atividade ###
@@ -14,6 +38,58 @@
 
 
 
-	:qa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
