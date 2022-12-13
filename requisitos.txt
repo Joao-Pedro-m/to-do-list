@@ -1,0 +1,19 @@
+
+ o sistema deverar oferecer a função de login:
+	deverar logar com nome de usuario e senha:
+		deverar ser feita uma consulta no banco de dados buscando pelo nome de usuario, caso dados corretos:
+			logar no sistema
+			### fim da atividade ### 
+	deverar oferecer uma opção de redirecionamento para a rotina "recuperar senha":
+		retorna a atividade login
+	deverar oferecer uma opção de redirecionamento para a atividade "cadastrar senha":
+		### fim da atividade ###
+	deverar oferecer uma opção de redirecionamento para a atividade "menu inicial":
+		### fim da atividade ###
+
+
+
+
+	:qa
+
+
