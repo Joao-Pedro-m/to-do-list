@@ -17,9 +17,11 @@
 	deverar receber os dados e caso siga os seguintes requisitos deverar criar a conta:
 		& o nome de usuario deverar se valido e não existir no banco de dados
 		& o email deverar ser valido, existir e não pertencer a alguem no banco de dados
-		& a senha deverar ser valida sem espaços, com 8 ou mais caracteres, conter caracteres especiais, numeros e 
-
-
+		& a senha deverar ser valida sem espaços, com 8 ou mais caracteres, conter carac-
+		  -teres especiais, numeros e letras maiusculas e minusculas
+		logar no sistema
+		### fimm da atividade ###
+	deverar oferecer uma opção 
 
  o sistema deverar oferecer a função de login:
 	deverar logar com nome de usuario e senha:
