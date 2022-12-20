@@ -4,7 +4,7 @@ import {MongoClient} from "mongodb"
 
 export default async function handler(req, res)
 {
-	const client = new MongoClient.conect(url,{
+	const client = new MongoClient(url,{
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	})
@@ -13,7 +13,11 @@ export default async function handler(req, res)
 
 	const db = client.db("to-do")
 	const collection = db.collection("users")
-
-
-	res.status(200).json({nome:"joão"})
+	
+	const user = {
+		username: "JoaoPedro",
+		password:"senhafodapracaralho",
+	}
+	const response = await collection.findOne(user)
+	res.status(200).json(response)
 }
