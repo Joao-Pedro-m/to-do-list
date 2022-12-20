@@ -1,23 +1,16 @@
-const url = process.env.DATABASE_URL
-
-import {MongoClient} from "mongodb"
+import connect from "../../utils/database"
 
 export default async function handler(req, res)
 {
-	const client = new MongoClient(url,{
-		useNewUrlParser: true,
-		useUnifiedTopology: true,
-	})
 
-	await client.connect()
-
-	const db = client.db("to-do")
-	const collection = db.collection("users")
+	const {db} = await connect()
 	
 	const user = {
-		username: "JoaoPedro",
-		password:"senhafodapracaralho",
+		username: req.body.username,
+		password: req.body.password,
 	}
-	const response = await collection.findOne(user)
+
+	const response = await db.collection("users").findOne(user)
+
 	res.status(200).json(response)
 }
