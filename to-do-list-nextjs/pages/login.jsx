@@ -42,17 +42,6 @@ export default function Home() {
         	<>
 			<div>
 				<h1>To-Do App</h1>
-				<ul>
-                                	<li>
-                                        	<Link href="/">Home</Link>
-                                	</li>
-                                	<li>
-                                        	<Link href="/login">Log in</Link>
-                                	</li>
-               	                	<li>
-                                         	<Link href="/signup">Sign up</Link>
-        	                        </li>
-	                        </ul>
 
 				<div>
 					Username:
