@@ -1,3 +1,8 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 html {
 	height: 100vh;
 	width: 100vw;
@@ -14,8 +19,8 @@ main {
 	left: 0px;
 	background-color: #222222;
 	width: 100vw;
-	height: 4rem;
-
+	height: 8vh;
+	align-items: center;
 }
 
 .ul-navbar {
@@ -24,9 +29,11 @@ main {
 
 .li-navbar {
 	display: inline-block;
-	background-color: #333333;
 	cursor: pointer;
-	color:#eeeeee;
+	color: #eeeeee;
+	padding: 8px;
+	margin-left: 32px;
+	border-radius: 2px;
 }
 
 .li-navbar:hover {
@@ -44,5 +51,6 @@ main {
 
 .title-navbar {
 	color: #eeeeee;
+	font-size: 24px;
 }
 
