@@ -2,18 +2,21 @@ import Link from "next/link"
 
 export default function Navbar(){
 	return (
-		<>
+		<div className="navbar">
 			<ul className="ul-navbar">
 				<li className="li-navbar">
-					<Link href="/">Home</Link>
+					<a href="/" className="link-navbar">Home</a>
 				</li>
 				<li className="li-navbar">
-					<Link href="/login">Log in</Link>
+					<a href="/login" className="link-navbar">Log in</a>
 				</li>
 				<li className="li-navbar">
-					<Link href="/signup">Sign up</Link>
+					<a href="/signup" className="link-navbar">Sign up</a>
 				</li>
 			</ul>
-		</>
+			<div className="title-navbar">
+				To-Do App
+			</div>
+		</div>
   	)
 }
