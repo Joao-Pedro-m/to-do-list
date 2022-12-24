@@ -40,7 +40,7 @@ export default function Home() {
 
 	return (
         	<>
-			<div>
+			<div className="login-div">
 				<h1>To-Do App</h1>
 
 				<div>
@@ -49,10 +49,11 @@ export default function Home() {
                                 <div>
 					Password:
 					<input placeholder="********" type="secret" onChange={handlePasswordInputChange} value={passwordInput}/></div>
-		<button onClick={login}>login</button>
-				<div>username:{usernameInput}</div>
-				<div>password:{passwordInput}</div>
-				<div>LoginStatus:{loginStatus}</div>
+				<div className="button-group-login">
+					<button onClick={login}>login</button>
+                                        <button onClick={login}>login</button>
+                                        <button onClick={login}>login</button>
+				</div>
 			</div>
 		</>
 	)

@@ -7,21 +7,39 @@ html {
 	height: 100vh;
 	width: 100vw;
 }
+
 main {
+	background: linear-gradient(to bottom right, #222222, #0f0f0f);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 92vh;
 	width: 100vw;
 	margin-top: 8vh;
-	background: url("../public/bg.jpg") no-repeat center center;
-	background-size: cover;
+	color: #eeeeee;
+}
+
+.login-div {
+
+	border-radius: 1rem;
+	padding: 5%;
+	background-color: rgba(204, 204, 204, 0.3);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+} 
+
+.button-group-login {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navbar {
+	background-color: #111111;
 	position: fixed;
 	display: flex;
 	justify-content: space-around;
 	top: 0px;
 	left: 0px;
-	background-color: #222222;
 	width: 100vw;
 	height: 8vh;
 	align-items: center;
@@ -42,7 +60,7 @@ main {
 
 .li-navbar:hover {
         background-color: #eeeeee;
-        color:#222222;
+        color:#111111;
 }
 
 .link-navbar {
