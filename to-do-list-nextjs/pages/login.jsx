@@ -15,6 +15,11 @@ export default function Home() {
         const handlePasswordInputChange = (e) => {
                 setPasswordInput(e.target.value)
         }
+
+	const signup = () => {
+                window.location.href = "/signup"
+        }
+
 	async function login(){  
 		const response = await axios(
 			{
@@ -41,18 +46,18 @@ export default function Home() {
 	return (
         	<>
 			<div className="login-div">
-				<h1>To-Do App</h1>
+				<h1>Log-in</h1>
 
 				<div>
 					Username:
-					<input placeholder="Joao_Pedro" type="text" onChange={handleUsernameInputChange} value={usernameInput}/></div>
+					<input placeholder="username" type="text" onChange={handleUsernameInputChange} value={usernameInput}/></div>
                                 <div>
 					Password:
-					<input placeholder="********" type="secret" onChange={handlePasswordInputChange} value={passwordInput}/></div>
+					<input placeholder="********" type="password" onChange={handlePasswordInputChange} value={passwordInput}/></div>
 				<div className="button-group-login">
-					<button onClick={login}>login</button>
+					<button onClick={login}>Recover Password</button>
                                         <button onClick={login}>login</button>
-                                        <button onClick={login}>login</button>
+                                        <button onClick={signup}>Create an account</button>
 				</div>
 			</div>
 		</>
